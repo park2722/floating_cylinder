@@ -119,7 +119,7 @@ def run_ar_session(video_file, board_pattern, board_cellsize, K, dist):
     cv.destroyAllWindows()
 
 if __name__ == "__main__":
-    video_file = "undistorted.mp4"
+    video_file = "video.mp4"
     board_pattern = (10, 7) # 체스보드 패턴의 가로, 세로 코너 수
     board_cellsize = 0.025 # 체스보드 셀의 실제 크기 (단위: 미터)
 
@@ -132,4 +132,4 @@ if __name__ == "__main__":
 
     # 2. AR 실행 (K와 dist_coeffs가 결정된 후 실행)
     print("AR 시스템을 시작합니다...")
-    run_ar_session("undistorted.mp4", (10, 7), 0.025, K, dist_coeffs)
+    run_ar_session("video.mp4", (10, 7), 0.025, K, dist_coeffs)
