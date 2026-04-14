@@ -1,8 +1,8 @@
-# 🏛️ Cylinder-AR-Navigator
+# 🏛️ Floating_Cylinder
 
 본 프로젝트는 카메라 캘리브레이션 데이터를 기반으로 체스판의 위치와 자세를 추정하고, 지정된 특정 좌표 위에 3D 원기둥(Cylinder)을 실시간으로 증강하는 AR(Augmented Reality) 프로그램입니다.
 
-## 📝 주요 기능 (Mission)
+## 📝 주요 기능
 * **Camera Pose Estimation (5점)**: 이전 과제(HW#3)를 통해 획득한 카메라 매트릭스(K)와 왜곡 계수를 활용하여, 실시간 영상 속 체스판의 회전(Rotation) 및 이동(Translation) 정보를 계산합니다.
 * **AR Object Visualization (15점)**: 체스판의 특정 격자 좌표 `(5, 4, 0)`를 중심으로 하는 가상의 3D 원기둥을 시각화합니다. 단순한 선 출력을 넘어 `cv2.projectPoints`를 통한 정확한 3D-to-2D 투영을 구현하였습니다.
 
